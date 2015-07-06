@@ -17,6 +17,8 @@
       }
 
       this.uiDialog.appendTo(this.overlay);
+
+      this._off(this.overlay, 'mousedown');
       this.overlay.addClass('ui-widget-overlay-scrollfix');
 
       if ($.ui.dialog.overlayInstances == 1) {
